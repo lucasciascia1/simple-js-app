@@ -6,9 +6,16 @@ var repository = [
 ];
 
 for (var i = 0; i < repository.length; i++) {
-document.write(repository[i].name + '(height:' + repository[i].height + ')');
-if (repository[i].height > 1.1) {
-  document.write ('wow, that\'s big')
-}
-\n
+
+  if (repository[i].height > 1.1) {
+    document.write (repository[i].name + ' (height:' + repository[i].height + ')' + ' wow, that\'s big' + "<br>")
+  }
+  else {
+    document.write(repository[i].name + ' (height:' + repository[i].height + ')' + "<br>");
+  }
+
+
+
+
+
 }
